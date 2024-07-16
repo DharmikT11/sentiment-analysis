@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center mt-5">
+            <h1>{{ project_name }}</h1>
+            <p>Analyze the sentiment of your text instantly!</p>
+        </div>
+        <div class="card mx-auto" style="width: 50%;">
+            <div class="card-body">
+                <h5 class="card-title">Enter your text</h5>
+                <form action="/predict" method="POST">
+                    <div class="form-group">
+                        <textarea class="form-control" name="text" rows="5" placeholder="Type your text here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Analyze Sentiment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
