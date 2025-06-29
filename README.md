@@ -60,11 +60,6 @@ Try entering:
 - "I love this product!" → Positive
 - "This is the worst experience ever." → Negative
 
-## 🎨 Screenshots
-
-![Main Page Example](assets/example_main.png)
-![Result Example](assets/example_result.png)
-
 ## 🤝 Contribution
 
 Feel free to fork, enhance, or open issues/PRs for improvements!
